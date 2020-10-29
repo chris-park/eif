@@ -2,7 +2,7 @@ Package: eif
 Type: Package
 LazyLoad: yes
 Title: Extended Isolation Forests for Anomaly Detection in R
-Version: 0.0.1
+Version: 0.0.2
 Date: 2019-12-19
 Author: ergodiclife <ergodiclife@pm.me>
 Maintainer: ergodiclife <ergodiclife@pm.me>
@@ -12,6 +12,6 @@ URL: https://github.com/ergodiclife/eif
 BugReports: https://github.com/ergodiclife/eif/issues
 SystemRequirements: Python (>= 3.0)
 Encoding: UTF-8
-Depends: R (>= 3.0)
-Imports: reticulate (>= 1.13)
-RoxygenNote: 7.0.2
+Depends: R (>= 4.0)
+Imports: reticulate (>= 1.16)
+RoxygenNote: 7.1.1
