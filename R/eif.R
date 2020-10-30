@@ -28,15 +28,15 @@
 #' @export
 eif = function(X, ntrees, sample_size, ExtensionLevel) { 
   ## Python check
-  if (!reticulate::py_module_available("eif")) {
+  if (!py_module_available("eif")) {
     stop("Please install the 'eif' Python module by running py_install('eif') or equivalent.")
   }
   
   ## Type checks
-  stopifnot(is.matrix(X),
-            is.integer(ntrees),
-            is.integer(sample_size),
-            is.integer(ExtensionLevel))
+  assert_matrix(X)
+  assert_integer(ntrees, lower = 2)
+  assert_integer(sample_size, lower = 2)
+  assert_integer(ExtensionLevel, lower = 0)
   
   ## Input checks
   if (ExtensionLevel >= ncol(X)) {
