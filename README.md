@@ -4,14 +4,14 @@
 This is an R wrapper around the [eif](https://github.com/sahandha/eif/) Python module for growing extended isolation forests for anomaly detection.
 
 ## Table of contents
+- [Installation](#Installation)
+    - [Requirements](#Requirements)
 - [Extended Isolation Forest](#Extended-Isolation-Forest)
     - [Summary](#Summary)
     - [Motivation](#Motivation)
     - [Isolation Forest](#Isolation-Forest)
     - [Extension](#Extension)
     - [The Code](#The-Code)
-- [Installation](#Installation)
-    - [Requirements](#Requirements)
 - [Use](#Use)
 - [Citation](#Citation)
 - [Releases](#Releases)
@@ -20,6 +20,24 @@ This is an R wrapper around the [eif](https://github.com/sahandha/eif/) Python m
 ## Extended Isolation Forest
 
 [eif](https://github.com/sahandha/eif/) is a Python implementation of the Extended Isolation Forest method described in this [paper](https://doi.org/10.1109/TKDE.2019.2947676). It is an improvement on the original algorithm Isolation Forest which is described (among other places) in this [paper](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf) for detecting anomalies and outliers for multidimensional data point distributions.
+
+## Installation
+First install the eif python package using `pip`:
+
+    pip install eif
+
+or directly from the repository
+
+    pip install git+https://github.com/sahandha/eif.git
+
+Then install the `eif` package in R:
+
+    devtools::install_github("ergodiclife/eif")
+    
+### Requirements
+- `eif`: `python` library
+- `reticulate`: `R` package
+- `checkmate`: `R` package
 
 ### Summary
 
@@ -92,23 +110,6 @@ Figure 7 shows a very simple example of anomalies and nominal points from a Sing
 ### The Code
 
 Here we provide the source code for the algorithm as well as documented example notebooks to help get started. Various visualizations are provided such as score distributions, score maps, aggregate slicing of the domain, and tree and whole forest visualizations. Most examples are in 2D. We present one 3D example. However, the algorithm works readily with higher dimensional data.
-
-## Installation
-First install the eif python package using `pip`:
-
-    pip install eif
-
-or directly from the repository
-
-    pip install git+https://github.com/sahandha/eif.git
-
-Then install the `eif` package in R:
-
-    devtools::install_github("ergodiclife/eif")
-    
-### Requirements
-- `eif` (python)
-- `reticulate` (R)
 
 ## Use
 These are the Jupyter notebooks with examples on how to use `eif`. Rmarkdown notebooks to come.
