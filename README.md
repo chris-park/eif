@@ -17,10 +17,6 @@ This is an R wrapper around the [eif](https://github.com/sahandha/eif/) Python m
 - [Releases](#Releases)
 - [TODO](#TODO)
 
-## Extended Isolation Forest
-
-[eif](https://github.com/sahandha/eif/) is a Python implementation of the Extended Isolation Forest method described in this [paper](https://doi.org/10.1109/TKDE.2019.2947676). It is an improvement on the original algorithm Isolation Forest which is described (among other places) in this [paper](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf) for detecting anomalies and outliers for multidimensional data point distributions.
-
 ## Installation
 First install the eif python package using `pip`:
 
@@ -38,6 +34,11 @@ Then install the `eif` package in R:
 - `eif`: `python` library
 - `reticulate`: `R` package
 - `checkmate`: `R` package
+
+## Extended Isolation Forest
+
+[eif](https://github.com/sahandha/eif/) is a Python implementation of the Extended Isolation Forest method described in this [paper](https://doi.org/10.1109/TKDE.2019.2947676). It is an improvement on the original algorithm Isolation Forest which is described (among other places) in this [paper](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf) for detecting anomalies and outliers for multidimensional data point distributions.
+
 
 ### Summary
 
