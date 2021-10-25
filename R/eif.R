@@ -34,9 +34,9 @@ eif = function(X, ntrees, sample_size, ExtensionLevel) {
   
   ## Type checks
   assert_matrix(X)
-  assert_integer(ntrees, lower = 2)
-  assert_integer(sample_size, lower = 2)
-  assert_integer(ExtensionLevel, lower = 0)
+  assert_integerish(ntrees, lower = 2)
+  assert_integerish(sample_size, lower = 2)
+  assert_integerish(ExtensionLevel, lower = 0)
   
   ## Input checks
   if (ExtensionLevel >= ncol(X)) {
